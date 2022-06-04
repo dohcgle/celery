@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fac49949-952b-4336-8853-570916e86bd1" name="Changes" comment="" />
+    <list default="true" id="fac49949-952b-4336-8853-570916e86bd1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/wsgi.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +36,11 @@
     "last_opened_file_path": "/home/ulugbek/PycharmProjects/Celery"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webapp" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,11 +51,22 @@
       <updated>1654342758405</updated>
       <workItem from="1654342762915" duration="15000" />
       <workItem from="1654342783725" duration="1000" />
-      <workItem from="1654342801805" duration="1375000" />
+      <workItem from="1654342801805" duration="2889000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
