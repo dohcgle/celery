@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fac49949-952b-4336-8853-570916e86bd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/webapp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/proj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/proj/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/proj/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/proj/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,19 +26,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2A6vGmFtaxZ3eVtZ6Qh9y7EZivn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ulugbek/PycharmProjects/Celery"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ulugbek/PycharmProjects/Celery/webapp/venv&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webapp" />
@@ -44,7 +57,9 @@
       <updated>1654342758405</updated>
       <workItem from="1654342762915" duration="15000" />
       <workItem from="1654342783725" duration="1000" />
-      <workItem from="1654342801805" duration="3247000" />
+      <workItem from="1654342801805" duration="3743000" />
+      <workItem from="1654347407189" duration="166000" />
+      <workItem from="1654347576139" duration="604000" />
     </task>
     <servers />
   </component>
