@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fac49949-952b-4336-8853-570916e86bd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/proj/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/proj/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/proj/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/proj/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/proj/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +44,7 @@
       <updated>1654342758405</updated>
       <workItem from="1654342762915" duration="15000" />
       <workItem from="1654342783725" duration="1000" />
-      <workItem from="1654342801805" duration="2889000" />
+      <workItem from="1654342801805" duration="3247000" />
     </task>
     <servers />
   </component>
