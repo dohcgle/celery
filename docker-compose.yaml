@@ -18,5 +18,5 @@ services:
     build:
       context: ./webapp
     volumes:
-      - ./cats:/app/src/cats
+      - ./webapp/src/cats:/app/src/cats
     command: ['celery', '--workdir=./src', '-A', 'proj', 'worker' ]
