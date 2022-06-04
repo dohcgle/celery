@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import tasks
 
 def home(request):
-    # start a task
+    tasks.download_a_cat.delay()
     return HttpResponse("<h1>Гружу кота!!!</h1>")
 
