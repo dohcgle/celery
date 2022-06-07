@@ -9,7 +9,7 @@ services:
     build:
       context: ./webapp
     expose:
-        - 8000
+      - 8000
     volumes:
       - static_volume:/home/app/web/staticfiles
       - media_volume:/home/app/web/mediafiles
