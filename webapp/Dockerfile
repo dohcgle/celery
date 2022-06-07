@@ -6,7 +6,6 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apk --update add
 RUN apk add gcc libc-dev libffi-dev jpeg-dev zlib-dev libjpeg
 RUN apk add postgresql-dev
 
