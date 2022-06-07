@@ -15,7 +15,7 @@ services:
       - ./entrypoint.sh
 
   nginx:
-    build: ./src/nginx
+    build: ./nginx
 
     volumes:
       - static_volume:/app/web/staticfiles
