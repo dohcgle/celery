@@ -13,6 +13,17 @@ services:
       - "8000:8000"
     command: [ "python3", "./src/manage.py", "runserver", "0.0.0.0:8000"]
 
+  nginx:
+    build: ./nginx
+    volumes:
+      - static_volume:/app/web/staticfiles
+      - media_volume:/app/web/mediafiles
+    ports:
+      - 8000:80
+    depends_on:
+        - webapp
+
+
   worker:
     restart: always
     build:
@@ -20,3 +31,7 @@ services:
     volumes:
       - ./cats:/app/src/cats
     command: ['celery', '--workdir=./src', '-A', 'proj', 'worker' ]
+
+volumes:
+  static_volume:
+  media_volume:
