@@ -21,6 +21,7 @@ RUN chmod +x entrypoint.sh
 
 COPY ./src ./src
 
+CMD [ "python3", "./src/manage.py", "runserver", "0.0.0.0:8000"]
 
 ENTRYPOINT ["sh", "entrypoint.sh"]
 
