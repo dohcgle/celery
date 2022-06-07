@@ -4,6 +4,10 @@ services:
   redis:
     image: redis
     restart: always
+    ports:
+      - '6379:6379'
+    volumes:
+      - cache:/data
 
   webapp:
     restart: always
@@ -20,3 +24,7 @@ services:
     volumes:
       - ./webapp/src/cats:/app/src/cats
     command: ['celery', '--workdir=./src', '-A', 'proj', 'worker' ]
+
+volumes:
+  cache:
+    driver: local
