@@ -6,7 +6,6 @@ services:
     restart: always
 
   webapp:
-    restart: always
     build:
       context: ./webapp
       dockerfile: Dockerfile
