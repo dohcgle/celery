@@ -8,7 +8,6 @@ services:
   webapp:
     build:
       context: ./webapp
-      dockerfile: Dockerfile
     expose:
         - 8000
     volumes:
