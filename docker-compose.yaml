@@ -9,8 +9,12 @@ services:
     restart: always
     build:
       context: ./webapp
-    ports:
-      - "8000:8000"
+      dockerfile: Dockerfile
+    expose:
+      - 8000
+    volumes:
+      - static_volume:/home/app/web/staticfiles
+      - media_volume:/home/app/web/mediafiles
     entrypoint:
       - ./entrypoint.sh
 
@@ -18,12 +22,12 @@ services:
     build: ./nginx
 
     volumes:
-      - static_volume:/app/web/staticfiles
-      - media_volume:/app/web/mediafiles
+      - static_volume:/home/app/web/staticfiles
+      - media_volume:/home/app/web/mediafiles
     ports:
       - 8000:80
     depends_on:
-        - webapp
+      - web
 
   worker:
     restart: always
