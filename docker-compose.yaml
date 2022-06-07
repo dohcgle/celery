@@ -5,15 +5,14 @@ services:
     image: redis
     restart: always
 
-  webapp:
+  web:
     build:
       context: ./webapp
-      dockerfile: ./Dockerfile
+      dockerfile: ./webapp/Dockerfile
     expose:
       - 8000
     volumes:
-      - static_volume:/home/app/web/staticfiles
-      - media_volume:/home/app/web/mediafiles
+      - static_volume:/app/static
     entrypoint:
       - ./entrypoint.sh
 
@@ -21,12 +20,11 @@ services:
   nginx:
     build: ./webapp/ngnix
     volumes:
-      - static_volume:/home/app/web/staticfiles
+      - static_volume:/app/static
     ports:
       - "8000:80"
     depends_on:
       - webapp
-
 
   worker:
     restart: always
@@ -36,6 +34,3 @@ services:
       - ./cats:/app/src/cats
     command: ['celery', '--workdir=./src', '-A', 'proj', 'worker' ]
 
-volumes:
-  static_volume:
-  media_volume:
