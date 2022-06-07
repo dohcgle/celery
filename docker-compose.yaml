@@ -7,12 +7,12 @@ services:
 
   web:
     build:
-      context: ./webapp
+      context: .`
       dockerfile: ./webapp/Dockerfile
     expose:
       - 8000
     volumes:
-      - static_volume:/app/static
+      - static_volume:/app/src/static
     entrypoint:
       - ./entrypoint.sh
 
@@ -20,7 +20,7 @@ services:
   nginx:
     build: ./webapp/ngnix
     volumes:
-      - static_volume:/app/static
+      - static_volume:/app/src/static
     ports:
       - "8000:80"
     depends_on:
@@ -34,3 +34,5 @@ services:
       - ./cats:/app/src/cats
     command: ['celery', '--workdir=./src', '-A', 'proj', 'worker' ]
 
+volumes:
+  static_volume:
