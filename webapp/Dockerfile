@@ -1,20 +1,26 @@
-FROM python:3.9
+FROM python:3.9.6-alpine
 
 # set environment variables
-ENV PYTHONDONTWRITEBYCODE 1
+ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-RUN apk --update add
-RUN apk add gcc libc-dev libffi-dev jpeg-dev zlib-dev libjpeg
-RUN apk add postgresql-dev
+# install psycopg2 dependencies
+RUN apk update \
+    && apk add postgresql-dev gcc python3-dev musl-dev
 
 WORKDIR /app
 
+# install dependencies
+RUN pip install --upgrade pip
+
 COPY ./requirements.txt ./
-COPY ./entrypoint.sh ./
-COPY ./src ./src
 RUN pip install -r requirements.txt
+
+COPY ./entrypoint.sh ./
 RUN chmod +x entrypoint.sh
+
+COPY ./src ./src
+
 
 ENTRYPOINT ["sh", "entrypoint.sh"]
 
