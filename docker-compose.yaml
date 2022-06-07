@@ -9,16 +9,26 @@ services:
     restart: always
     build:
       context: ./webapp
-      dockerfile: Dockerfile
-    expose:
-      - 8000
+    command: gunicorn proj.wsgi:application --bind 0.0.0.0:8000
+    ports:
+        - 8000:8000
     volumes:
       - static_volume:/home/app/web/staticfiles
       - media_volume:/home/app/web/mediafiles
     entrypoint:
       - ./entrypoint.sh
 
-  
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - static_volume:/home/app/web/staticfiles
+    ports:
+      - 1337:80
+    depends_on:
+      - webapp
+
+
   worker:
     restart: always
     build:
