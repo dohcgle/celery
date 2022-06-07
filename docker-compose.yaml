@@ -20,7 +20,7 @@ services:
 
 
   nginx:
-    build: ./nginx
+    build: ./webapp/ngnix
     volumes:
       - static_volume:/home/app/web/staticfiles
     ports:
